@@ -1,5 +1,5 @@
 name: "Auto merge"
-description: "Automatically merge pull requests with the 'Ready to merge' or 'Auto merge' label if they are not drafts."inputs:
+description: "Automatically merge pull requests with the 'Ready to merge' or 'Auto merge' label if they are not drafts."
 inputs:
   token:
     description: "GitHub token with repo permissions"

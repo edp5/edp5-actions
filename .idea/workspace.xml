@@ -5,10 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3dfd263d-cf4c-476f-b0c4-0ed279f29d4d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/edp5-actions.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auto-merge/action.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auto-merge/action.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,6 +70,7 @@
       <updated>1758534615463</updated>
       <workItem from="1758534617127" duration="329000" />
       <workItem from="1758535206820" duration="267000" />
+      <workItem from="1758540299831" duration="144000" />
     </task>
     <servers />
   </component>
