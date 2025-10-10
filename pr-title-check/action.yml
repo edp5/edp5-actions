@@ -1,0 +1,13 @@
+name: "PR Title Check"
+description: "Check if the pull request title follows the conventional commit format."
+
+runs:
+  using: composite
+  steps:
+    - run: |
+      if [[ ! "$(echo '${{ github.event.pull_request.title }}' | grep -E '^(fix|feat|tech|docs|bump|style|refactor|chore|perf|test|revert|breaking)(\([^)]+\))?:')" ]]; then
+      echo "Error:
+        Pull request title must start with one of the following keywords: fix, feat, tech, docs, bump, style, refactor, chore, perf, test, breaking or revert. Optionally, it can include a scope in parentheses followed by a colon (e.g., 'feat(scope):')."
+      exit 1
+      fi
+    shell: bash
