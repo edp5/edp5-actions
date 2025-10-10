@@ -1,0 +1,17 @@
+name: pr-title-check
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - edited
+jobs:
+  pr-title-check:
+    runs-on: ubuntu-latest
+    # Run only if pull request is not draft
+    if: github.event.pull_request.draft == false
+    steps:
+      - uses: edp5/edp5-actions/pr-title-check@main
