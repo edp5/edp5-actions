@@ -1,0 +1,14 @@
+name: release.yml
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: edp5/edp5-actions/release@main
+        with:
+          token: ${{ secrets.SERVICE_TOKEN }}
