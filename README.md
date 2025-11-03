@@ -197,7 +197,7 @@ After creating the action, edit the generated `action.yml` file to add your spec
    git commit -m "feat: add new feature"
    ```
    
-   See the [PR Title Check](#2-pr-title-check-pr-title-check) section for valid commit prefixes.
+   See the PR Title Check section above for valid commit prefixes.
 
 5. **Push your branch** and create a pull request:
    ```bash
