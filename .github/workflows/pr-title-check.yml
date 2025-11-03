@@ -1,4 +1,5 @@
 name: pr-title-check
+
 on:
   pull_request:
     branches:
@@ -8,6 +9,8 @@ on:
       - reopened
       - synchronize
       - edited
+  merge_group:
+
 jobs:
   pr-title-check:
     runs-on: ubuntu-latest
