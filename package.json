@@ -1,0 +1,19 @@
+{
+  "name": "edp5-actions",
+  "version": "1.0.0",
+  "description": "Actions for edp5 github organization",
+  "homepage": "https://github.com/edp5/edp5-actions#readme",
+  "bugs": {
+    "url": "https://github.com/edp5/edp5-actions/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edp5/edp5-actions.git"
+  },
+  "license": "ISC",
+  "author": "edp5",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
