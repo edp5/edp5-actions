@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/edp5/edp5-actions/compare/v1.0.0...v1.0.1) (2025-11-03)
+
+### 🐛 Bug Fixes
+
+* Skip validation if event is merge queue ([#4](https://github.com/edp5/edp5-actions/issues/4)) ([6ce85ad](https://github.com/edp5/edp5-actions/commit/6ce85ad47a8f7d6469dbd76fa712d886349e70b4))
+
 ## 1.0.0 (2025-11-03)
 
 * add .idea to gitignore ([41f76c2](https://github.com/edp5/edp5-actions/commit/41f76c260045eb9a10758a9a480020116ef1a743))
