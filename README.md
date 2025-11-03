@@ -13,7 +13,7 @@ This repository contains composite GitHub Actions designed to streamline common 
 
 ### 1. Auto Merge (`auto-merge`)
 
-Automatically merges pull requests with the 'Ready to merge' or 'Auto merge' label if they are not drafts.
+Automatically merge pull requests with the 'Ready to merge' or 'Auto merge' label if they are not drafts.
 
 **Features:**
 - Rebases the branch before merging
@@ -91,7 +91,7 @@ jobs:
 
 ### 3. Release (`release`)
 
-Generates a changelog and releases the repository using semantic-release.
+Generate a changelog and release a repository with semantic-release.
 
 **Features:**
 - Automatic versioning based on conventional commits
