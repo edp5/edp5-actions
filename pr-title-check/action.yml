@@ -7,6 +7,10 @@ runs:
     - name: Check PR title format
       shell: bash
       run: |
+        if [ "${{ github.event_name }}" = "merge_group" ]; then
+          echo "Merge queue event detected. Skipping PR title check."
+          exit 0
+        fi
         title="${{ github.event.pull_request.title }}"
         if ! echo "$title" | grep -Eq '^(fix|feat|tech|docs|bump|style|refactor|chore|perf|test|revert|breaking)(\([^)]+\))?:'; then
           echo "❌ Error:
