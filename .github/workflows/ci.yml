@@ -1,9 +1,11 @@
-name: ci.yml
+name: ci
+
 on:
   pull_request:
     types:
       - opened
       - ready_for_review
+  merge_group:
 
 jobs:
   lint:
