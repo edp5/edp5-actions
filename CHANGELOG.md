@@ -1,3 +1,9 @@
+## [1.0.2](https://github.com/edp5/edp5-actions/compare/v1.0.1...v1.0.2) (2025-11-03)
+
+### 📚 Documentation
+
+* add README with contribution guide ([#5](https://github.com/edp5/edp5-actions/issues/5)) ([df6404e](https://github.com/edp5/edp5-actions/commit/df6404e58c31d942d31c06df9e166168ab0e0422))
+
 ## [1.0.1](https://github.com/edp5/edp5-actions/compare/v1.0.0...v1.0.1) (2025-11-03)
 
 ### 🐛 Bug Fixes
