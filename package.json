@@ -17,7 +17,7 @@
     "test": "vitest run",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "add-action": "node script/new-action.js"
+    "add-action": "node scripts/new-action.js"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
