@@ -1,6 +1,11 @@
+import fs from "fs/promises";
+import path from "path";
 import { describe, expect, test } from "vitest";
 
 describe("PR Title Check Action", () => {
+  // This regex matches the pattern used in the pr-title-check/action.yml
+  const titleRegex = /^(fix|feat|tech|docs|bump|style|refactor|chore|perf|test|revert|breaking)(\([^)]+\))?:/;
+
   const validFormats = [
     "fix: resolve issue",
     "feat: add new feature",
@@ -35,27 +40,35 @@ describe("PR Title Check Action", () => {
   ];
 
   test.each(validFormats)("should accept valid format: \"%s\"", (title) => {
-    const regex = /^(fix|feat|tech|docs|bump|style|refactor|chore|perf|test|revert|breaking)(\([^)]+\))?:/;
-    expect(regex.test(title)).toBe(true);
+    expect(titleRegex.test(title)).toBe(true);
   });
 
   test.each(validFormatsWithScope)("should accept valid format with scope: \"%s\"", (title) => {
-    const regex = /^(fix|feat|tech|docs|bump|style|refactor|chore|perf|test|revert|breaking)(\([^)]+\))?:/;
-    expect(regex.test(title)).toBe(true);
+    expect(titleRegex.test(title)).toBe(true);
   });
 
   test.each(invalidFormats)("should reject invalid format: \"%s\"", (title) => {
-    const regex = /^(fix|feat|tech|docs|bump|style|refactor|chore|perf|test|revert|breaking)(\([^)]+\))?:/;
-    expect(regex.test(title)).toBe(false);
+    expect(titleRegex.test(title)).toBe(false);
   });
 
-  test("regex pattern matches the one in action.yml", () => {
-    // This is the exact regex from the action.yml file
-    const actionRegex = /^(fix|feat|tech|docs|bump|style|refactor|chore|perf|test|revert|breaking)(\([^)]+\))?:/;
+  test("regex pattern matches the one in action.yml", async () => {
+    // Read the actual action.yml file
+    const actionPath = path.join(process.cwd(), "pr-title-check", "action.yml");
+    const content = await fs.readFile(actionPath, "utf8");
 
-    // Test that our understanding is correct
-    expect(actionRegex.test("feat: new feature")).toBe(true);
-    expect(actionRegex.test("feat(scope): new feature")).toBe(true);
-    expect(actionRegex.test("invalid: title")).toBe(false);
+    // Extract the regex pattern from the action.yml
+    // The pattern is in the grep -Eq command
+    const regexMatch = content.match(/grep -Eq '([^']+)'/);
+    expect(regexMatch).toBeTruthy();
+
+    const extractedPattern = regexMatch[1];
+
+    // Verify our test regex matches the extracted pattern
+    expect(extractedPattern).toBe("^(fix|feat|tech|docs|bump|style|refactor|chore|perf|test|revert|breaking)(\\([^)]+\\))?:");
+
+    // Test that the regex works as expected
+    expect(titleRegex.test("feat: new feature")).toBe(true);
+    expect(titleRegex.test("feat(scope): new feature")).toBe(true);
+    expect(titleRegex.test("invalid: title")).toBe(false);
   });
 });
