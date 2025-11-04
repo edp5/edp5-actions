@@ -8,14 +8,14 @@ describe("PR Title Check Action", () => {
 
   describe("Configuration", () => {
     test("regex pattern matches the one in action.yml", async () => {
-      // Given: the action.yml file exists
+      // given
       const actionPath = path.join(process.cwd(), "pr-title-check", "action.yml");
       const content = await fs.readFile(actionPath, "utf8");
 
-      // When: extracting the regex pattern from the action.yml
+      // when
       const regexMatch = content.match(/grep -Eq '([^']+)'/);
 
-      // Then: the pattern should be correctly extracted and match our test regex
+      // then
       expect(regexMatch).toBeTruthy();
       const extractedPattern = regexMatch[1];
       expect(extractedPattern).toBe("^(fix|feat|tech|docs|bump|style|refactor|chore|perf|test|revert|breaking)(\\([^)]+\\))?:");
@@ -39,11 +39,10 @@ describe("PR Title Check Action", () => {
     ];
 
     test.each(validFormats)("should accept $type format: \"$title\"", ({ title }) => {
-      // Given: a valid PR title with conventional commit format
-      // When: checking the title against the regex
+      // when
       const result = titleRegex.test(title);
 
-      // Then: the title should be accepted
+      // then
       expect(result).toBe(true);
     });
   });
@@ -58,11 +57,10 @@ describe("PR Title Check Action", () => {
     ];
 
     test.each(validFormatsWithScope)("should accept $type($scope) format: \"$title\"", ({ title }) => {
-      // Given: a valid PR title with conventional commit format and scope
-      // When: checking the title against the regex
+      // when
       const result = titleRegex.test(title);
 
-      // Then: the title should be accepted
+      // then
       expect(result).toBe(true);
     });
   });
@@ -79,47 +77,45 @@ describe("PR Title Check Action", () => {
     ];
 
     test.each(invalidFormats)("should reject title with $reason: \"$title\"", ({ title }) => {
-      // Given: an invalid PR title that doesn't follow conventional commit format
-      // When: checking the title against the regex
+      // when
       const result = titleRegex.test(title);
 
-      // Then: the title should be rejected
+      // then
       expect(result).toBe(false);
     });
   });
 
   describe("Action Functionality", () => {
     test("action scripts validates title correctly", async () => {
-      // Given: the action scripts with validation logic
+      // given
       const actionPath = path.join(process.cwd(), "pr-title-check", "action.yml");
 
-      // When: reading the action configuration
+      // when
       const content = await fs.readFile(actionPath, "utf8");
 
-      // Then: it should contain the validation logic
+      // then
       expect(content).toContain("grep -Eq");
       expect(content).toContain("exit 0");
       expect(content).toContain("exit 1");
     });
 
     test("action skips check for merge_group events", async () => {
-      // Given: the action scripts
+      // given
       const actionPath = path.join(process.cwd(), "pr-title-check", "action.yml");
       const content = await fs.readFile(actionPath, "utf8");
 
-      // When: checking for merge_group event handling
+      // when
       // Then: the action should skip validation for merge_group events
       expect(content).toContain("merge_group");
       expect(content).toContain("Skipping PR title check");
     });
 
     test("action provides helpful error message", async () => {
-      // Given: the action scripts
+      // Given
       const actionPath = path.join(process.cwd(), "pr-title-check", "action.yml");
       const content = await fs.readFile(actionPath, "utf8");
 
-      // When: checking for error messaging
-      // Then: the action should provide clear guidance on valid formats
+      // when & then
       expect(content).toContain("❌ Error");
       expect(content).toContain("fix, feat, tech, docs, bump");
       expect(content).toContain("feat(scope):");
