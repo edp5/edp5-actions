@@ -1,3 +1,14 @@
+## [1.0.3](https://github.com/edp5/edp5-actions/compare/v1.0.2...v1.0.3) (2025-11-04)
+
+* add merge group option ([#9](https://github.com/edp5/edp5-actions/issues/9)) ([e7b26f8](https://github.com/edp5/edp5-actions/commit/e7b26f8426a16e6a098ed986a1c0a3a5c72fe680))
+* customize dependabot configuration ([#8](https://github.com/edp5/edp5-actions/issues/8)) ([3990ff0](https://github.com/edp5/edp5-actions/commit/3990ff074f6b4e8595abebe1f28eee1c1841c175))
+* use specified version on workflows ([#14](https://github.com/edp5/edp5-actions/issues/14)) ([388508f](https://github.com/edp5/edp5-actions/commit/388508fd1f1b4b303e9134063f27300d753ea949))
+
+### 🐛 Bug Fixes
+
+* create new release manually ([#6](https://github.com/edp5/edp5-actions/issues/6)) ([a01059a](https://github.com/edp5/edp5-actions/commit/a01059a1467c08e1c8572ecdceb6028b588f8eac))
+* fix workflow triggered in ci ([#10](https://github.com/edp5/edp5-actions/issues/10)) ([87adc2d](https://github.com/edp5/edp5-actions/commit/87adc2d33c9a3cbca9cdbb0124de0eb60bdf3050))
+
 ## [1.0.2](https://github.com/edp5/edp5-actions/compare/v1.0.1...v1.0.2) (2025-11-03)
 
 ### 📚 Documentation
