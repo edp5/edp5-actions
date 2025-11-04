@@ -17,4 +17,4 @@ jobs:
     # Run only if pull request is not draft
     if: github.event.pull_request.draft == false
     steps:
-      - uses: edp5/edp5-actions/pr-title-check@main
+      - uses: edp5/edp5-actions/pr-title-check@v1.0.2
