@@ -89,8 +89,8 @@ describe("PR Title Check Action", () => {
   });
 
   describe("Action Functionality", () => {
-    test("action script validates title correctly", async () => {
-      // Given: the action script with validation logic
+    test("action scripts validates title correctly", async () => {
+      // Given: the action scripts with validation logic
       const actionPath = path.join(process.cwd(), "pr-title-check", "action.yml");
 
       // When: reading the action configuration
@@ -103,7 +103,7 @@ describe("PR Title Check Action", () => {
     });
 
     test("action skips check for merge_group events", async () => {
-      // Given: the action script
+      // Given: the action scripts
       const actionPath = path.join(process.cwd(), "pr-title-check", "action.yml");
       const content = await fs.readFile(actionPath, "utf8");
 
@@ -114,7 +114,7 @@ describe("PR Title Check Action", () => {
     });
 
     test("action provides helpful error message", async () => {
-      // Given: the action script
+      // Given: the action scripts
       const actionPath = path.join(process.cwd(), "pr-title-check", "action.yml");
       const content = await fs.readFile(actionPath, "utf8");
 

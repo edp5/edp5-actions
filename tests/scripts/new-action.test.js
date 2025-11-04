@@ -3,7 +3,7 @@ import os from "os";
 import path from "path";
 import { describe, expect, test } from "vitest";
 
-import { createAction } from "../new-action.js";
+import { createAction } from "../../scripts/new-action.js";
 
 describe("createAction", () => {
   test("creates directory and action.yml with replaced name", async () => {
