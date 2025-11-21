@@ -1,3 +1,21 @@
+## [1.1.0](https://github.com/edp5/edp5-actions/compare/v1.0.3...v1.1.0) (2025-11-21)
+
+* customize the release triggered ([#20](https://github.com/edp5/edp5-actions/issues/20)) ([820dbe7](https://github.com/edp5/edp5-actions/commit/820dbe73d2609abc7b42820d51bfae8b3f32f487))
+
+### 🚀 New features
+
+* add automations to update node-js version ([#25](https://github.com/edp5/edp5-actions/issues/25)) ([04ec6c1](https://github.com/edp5/edp5-actions/commit/04ec6c179ec75fd093e210cc34e44d79f7ded422))
+* add manual trigger for release workflow ([#26](https://github.com/edp5/edp5-actions/issues/26)) ([7176183](https://github.com/edp5/edp5-actions/commit/7176183aada9b42facf5faa9e21c31e50811eb0d))
+
+### 🐛 Bug Fixes
+
+* fix the triggered of auto merge workflow ([#15](https://github.com/edp5/edp5-actions/issues/15)) ([f617e87](https://github.com/edp5/edp5-actions/commit/f617e876cf6afebb8c884f935088c5a268c14b97))
+* remove the auto trigger of release workflow ([#27](https://github.com/edp5/edp5-actions/issues/27)) ([baa7b19](https://github.com/edp5/edp5-actions/commit/baa7b19e62d84b050b4b81ed2a8f14c08e7077cb))
+
+### 🏗️ Code Refactoring
+
+* Refactor tests ([#16](https://github.com/edp5/edp5-actions/issues/16)) ([b8755a2](https://github.com/edp5/edp5-actions/commit/b8755a215c181e5d28ae52e46db009b26e23cea4))
+
 ## [1.0.3](https://github.com/edp5/edp5-actions/compare/v1.0.2...v1.0.3) (2025-11-04)
 
 * add merge group option ([#9](https://github.com/edp5/edp5-actions/issues/9)) ([e7b26f8](https://github.com/edp5/edp5-actions/commit/e7b26f8426a16e6a098ed986a1c0a3a5c72fe680))
