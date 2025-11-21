@@ -1,13 +1,9 @@
 name: release.yml
 on:
-  pull_request:
-    types: [closed]
   workflow_dispatch:
 
 jobs:
   release:
-    # Run only if pr title start with fix or feat or breaking including scope and if pull request is merged
-    if: github.event.pull_request.merged == true && (startsWith(github.event.pull_request.title, 'fix') || startsWith(github.event.pull_request.title, 'feat') || startsWith(github.event.pull_request.title, 'breaking'))
     runs-on: ubuntu-latest
     steps:
       - uses: edp5/edp5-actions/release@v1.0.3
