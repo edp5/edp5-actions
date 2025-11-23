@@ -6,7 +6,7 @@
       {
         "preset": "conventionalcommits",
         "releaseRules": [
-          { "type": "breaking",  "release": "major" },
+          { "type": "breaking", "release": "major" },
           { "type": "feat", "release": "minor" },
           { "type": "fix", "release": "patch" },
           { "type": "perf", "release": "patch" },
