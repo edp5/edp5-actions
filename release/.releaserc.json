@@ -31,7 +31,7 @@
             { "type": "perf", "section": "⏱️ Performance Improvements" },
             { "type": "refactor", "section": "🏗️ Code Refactoring" },
             { "type": "docs", "section": "📚 Documentation" },
-            { "type": "tech", " section": "🛠️ Technical" },
+            { "type": "tech", "section": "🛠️ Technical" },
             { "type": "chore", "hidden": true },
             { "type": "style", "hidden": true },
             { "type": "test", "hidden": true }
