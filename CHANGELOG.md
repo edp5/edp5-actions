@@ -1,3 +1,9 @@
+## [1.1.1](https://github.com/edp5/edp5-actions/compare/v1.1.0...v1.1.1) (2025-11-23)
+
+### 🏗️ Code Refactoring
+
+* refactor the release file ([#30](https://github.com/edp5/edp5-actions/issues/30)) ([48d31f5](https://github.com/edp5/edp5-actions/commit/48d31f5f477de7523307f492df4e902426d62b3c))
+
 ## [1.1.0](https://github.com/edp5/edp5-actions/compare/v1.0.3...v1.1.0) (2025-11-21)
 
 * customize the release triggered ([#20](https://github.com/edp5/edp5-actions/issues/20)) ([820dbe7](https://github.com/edp5/edp5-actions/commit/820dbe73d2609abc7b42820d51bfae8b3f32f487))
