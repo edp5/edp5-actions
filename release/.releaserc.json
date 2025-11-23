@@ -6,10 +6,7 @@
       {
         "preset": "conventionalcommits",
         "releaseRules": [
-          {
-            "type": "breaking",
-            "release": "major"
-          },
+          { "type": "breaking", "release": "major" },
           { "type": "feat", "release": "minor" },
           { "type": "fix", "release": "patch" },
           { "type": "perf", "release": "patch" },
@@ -28,10 +25,7 @@
         "preset": "conventionalcommits",
         "presetConfig": {
           "types": [
-            {
-              "type": "breaking",
-              "section": "💥 Breaking Changes"
-            },
+            { "type": "breaking", "section": "💥 Breaking Changes" },
             { "type": "feat", "section": "🚀 New features" },
             { "type": "fix", "section": "🐛 Bug Fixes" },
             { "type": "perf", "section": "⏱️ Performance Improvements" },
