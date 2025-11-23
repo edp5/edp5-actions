@@ -25,7 +25,7 @@
         "preset": "conventionalcommits",
         "presetConfig": {
           "types": [
-            { "type": "breaking",  "section": "💥 Breaking Changes" },
+            { "type": "breaking", "section": "💥 Breaking Changes" },
             { "type": "feat", "section": "🚀 New features" },
             { "type": "fix", "section": "🐛 Bug Fixes" },
             { "type": "perf", "section": "⏱️ Performance Improvements" },
