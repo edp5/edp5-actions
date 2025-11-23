@@ -1,3 +1,9 @@
+## [1.1.2](https://github.com/edp5/edp5-actions/compare/v1.1.1...v1.1.2) (2025-11-23)
+
+### 🐛 Bug Fixes
+
+* Fix the release types for technical task ([#31](https://github.com/edp5/edp5-actions/issues/31)) ([b22af7f](https://github.com/edp5/edp5-actions/commit/b22af7fd0d36a29c3a016845904f0940de8f694a))
+
 ## [1.1.1](https://github.com/edp5/edp5-actions/compare/v1.1.0...v1.1.1) (2025-11-23)
 
 ### 🏗️ Code Refactoring
