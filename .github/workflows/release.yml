@@ -6,6 +6,6 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - uses: edp5/edp5-actions/release@v1.1.0
+      - uses: edp5/edp5-actions/release@v1.1.2
         with:
           token: ${{ secrets.SERVICE_TOKEN }}
