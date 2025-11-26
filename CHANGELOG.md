@@ -1,3 +1,9 @@
+## [1.1.3](https://github.com/edp5/edp5-actions/compare/v1.1.2...v1.1.3) (2025-11-26)
+
+### 🛠️ Technical
+
+* add actions for dependabot configuration ([#34](https://github.com/edp5/edp5-actions/issues/34)) ([d9b06ae](https://github.com/edp5/edp5-actions/commit/d9b06ae3cc2c7933e13ac8dd5634eca7869cedf5))
+
 ## [1.1.2](https://github.com/edp5/edp5-actions/compare/v1.1.1...v1.1.2) (2025-11-23)
 
 ### 🐛 Bug Fixes
