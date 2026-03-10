@@ -1,3 +1,14 @@
+## [1.1.4](https://github.com/edp5/edp5-actions/compare/v1.1.3...v1.1.4) (2026-03-10)
+
+### 🐛 Bug Fixes
+
+* add GITHUB_TOKEN environment variable for PR creation ([#60](https://github.com/edp5/edp5-actions/issues/60)) ([6a8b67b](https://github.com/edp5/edp5-actions/commit/6a8b67b40f86c3849cfc86fc685918bf3f2513fd))
+* update Node.js version workflow to use actions/checkout@v4 and improve PR creation ([#59](https://github.com/edp5/edp5-actions/issues/59)) ([db14112](https://github.com/edp5/edp5-actions/commit/db141121465d87d4f3e925b48d2d225992821905))
+
+### 🛠️ Technical
+
+* Add manual triggered for node updater ([#58](https://github.com/edp5/edp5-actions/issues/58)) ([82a5974](https://github.com/edp5/edp5-actions/commit/82a59744cdc916d12a3a0b61b9d912eb2647e453))
+
 ## [1.1.3](https://github.com/edp5/edp5-actions/compare/v1.1.2...v1.1.3) (2025-11-26)
 
 ### 🛠️ Technical
