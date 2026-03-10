@@ -126,7 +126,7 @@ describe("Update Node Version Action", () => {
       expect(updateStep.if).toContain("steps.check-nvmrc.outputs.UP_TO_DATE");
       expect(updateStep.run).toContain("git checkout -b update-node-version-to-${{ steps.get-latest-node.outputs.LATEST_VERSION }}");
       expect(updateStep.run).toContain("git commit -m");
-      expect(updateStep.run).toContain("git push origin update-node-version-to-${{ steps.get-latest-node.outputs.LATEST_VERSION }}");
+      expect(updateStep.run).toContain("git push -u origin update-node-version-to-${{ steps.get-latest-node.outputs.LATEST_VERSION }}");
     });
 
     test("Create Pull Request step uses gh and receives token from inputs", async () => {

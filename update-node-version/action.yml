@@ -11,6 +11,8 @@ runs:
   steps:
     - name: Checkout code
       uses: actions/checkout@v6
+      with:
+        token: ${{ inputs.token }}
 
     - name: Get latest Node.js version
       id: get-latest-node
@@ -47,12 +49,12 @@ runs:
         git checkout -b update-node-version-to-${{ steps.get-latest-node.outputs.LATEST_VERSION }}
         git add .nvmrc
         git commit -m "bump: Update Node.js version to ${{ steps.get-latest-node.outputs.LATEST_VERSION }}"
-        git push origin update-node-version-to-${{ steps.get-latest-node.outputs.LATEST_VERSION }}
+        git push -u origin update-node-version-to-${{ steps.get-latest-node.outputs.LATEST_VERSION }}
 
     - name: Create Pull Request
       if: steps.check-nvmrc.outputs.UP_TO_DATE == 'false'
       shell: bash
       run: |
-        gh pr create --title "bump: Update Node.js version to ${{ steps.get-latest-node.outputs.LATEST_VERSION }}" --body "This PR updates the Node.js version in the .nvmrc file to the latest version ${{ steps.get-latest-node.outputs.LATEST_VERSION }}."
+        gh pr create --title "bump: Update Node.js version to ${{ steps.get-latest-node.outputs.LATEST_VERSION }}" --body "This PR updates the Node.js version in the .nvmrc file to the latest version ${{ steps.get-latest-node.outputs.LATEST_VERSION }}." --base main
       env:
         GITHUB_TOKEN: ${{ inputs.token }}
