@@ -49,9 +49,9 @@ runs:
         git checkout -b update-node-version-to-${{ steps.get-latest-node.outputs.LATEST_VERSION }}
         git add .nvmrc
         git commit -m "bump: Update Node.js version to ${{ steps.get-latest-node.outputs.LATEST_VERSION }}"
-        git push -u origin update-node-version-to-${{ steps.get-latest-node.outputs.LATEST_VERSION }}
+        git push --set-upstream origin update-node-version-to-${{ steps.get-latest-node.outputs.LATEST_VERSION }}
       env:
-        GITHUB_TOKEN: ${{ inputs.token }}
+        token: ${{ inputs.token }}
 
     - name: Create Pull Request
       if: steps.check-nvmrc.outputs.UP_TO_DATE == 'false'
