@@ -1,3 +1,13 @@
+## [1.1.5](https://github.com/edp5/edp5-actions/compare/v1.1.4...v1.1.5) (2026-03-19)
+
+### 🐛 Bug Fixes
+
+* Fix the ci for node version updater ([#67](https://github.com/edp5/edp5-actions/issues/67)) ([33f4d29](https://github.com/edp5/edp5-actions/commit/33f4d292e015d7d2a11c04b336c3ae97878f4ded))
+
+### 🛠️ Technical
+
+* Setup qodana ([#62](https://github.com/edp5/edp5-actions/issues/62)) ([9c0252e](https://github.com/edp5/edp5-actions/commit/9c0252e7be1fab62a0914aa9cbd45c7f0fb505fd))
+
 ## [1.1.4](https://github.com/edp5/edp5-actions/compare/v1.1.3...v1.1.4) (2026-03-10)
 
 ### 🐛 Bug Fixes
