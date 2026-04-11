@@ -53,6 +53,7 @@ describe("Auto Merge Action", () => {
       expect(stepNames).toContain("Rebase branch");
       expect(stepNames).toContain("Enable auto merge or merge pull request");
       expect(stepNames).toContain("Approve pull request if it's from dependabot");
+      expect(stepNames).toContain("Comment pull request to notify about merge if it's not from dependabot");
     });
 
     test("checkout step uses provided token", async () => {
@@ -126,6 +127,24 @@ describe("Auto Merge Action", () => {
       expect(approveStep.if).toContain("dependabot");
       expect(approveStep.run).toContain("gh pr review");
       expect(approveStep.run).toContain("--approve");
+    });
+
+    test("Comment pull request if it's not made by dependabot", async () => {
+      // given
+      const actionPath = path.join(process.cwd(), "auto-merge", "action.yml");
+      const content = await fs.readFile(actionPath, "utf8");
+      const action = yaml.parse(content);
+
+      // when
+      const commentStep = action.runs.steps.find((step) =>
+        step.name?.includes("Comment"),
+      );
+
+      // then
+      expect(commentStep).toBeDefined();
+      expect(commentStep.if).toContain("dependabot");
+      expect(commentStep.run).toContain("gh pr comment");
+      expect(commentStep.run).toContain("--body");
     });
   });
 
