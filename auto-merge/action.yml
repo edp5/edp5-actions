@@ -31,3 +31,10 @@ runs:
       shell: bash
       env:
         GITHUB_TOKEN: ${{ inputs.token }}
+
+    - name: Comment pull request to notify about merge if it's not from dependabot
+      if: "!contains(github.event.pull_request.user.login, 'dependabot')"
+      run: gh pr comment ${{ github.event.pull_request.number }} --body "This pull request is configured for automatic merge once all required checks and approvals are complete."
+      shell: bash
+      env:
+        GITHUB_TOKEN: ${{ inputs.token }}
