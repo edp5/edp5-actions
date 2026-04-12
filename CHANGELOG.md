@@ -1,3 +1,9 @@
+## [1.2.1](https://github.com/edp5/edp5-actions/compare/v1.2.0...v1.2.1) (2026-04-12)
+
+### 🛠️ Technical
+
+* Add revert scope functionality ([#83](https://github.com/edp5/edp5-actions/issues/83)) ([aebc5a7](https://github.com/edp5/edp5-actions/commit/aebc5a7c92e9ea5af441b0195d5c465b0f5cf1fc))
+
 ## [1.2.0](https://github.com/edp5/edp5-actions/compare/v1.1.5...v1.2.0) (2026-04-12)
 
 ### 🚀 New features
