@@ -1,3 +1,13 @@
+## [1.2.0](https://github.com/edp5/edp5-actions/compare/v1.1.5...v1.2.0) (2026-04-12)
+
+### 🚀 New features
+
+* add a comment to notify merge ([#80](https://github.com/edp5/edp5-actions/issues/80)) ([f77c40b](https://github.com/edp5/edp5-actions/commit/f77c40b5f7b98383648ee79302eb28321dbec3e2))
+
+### 🛠️ Technical
+
+* remove branch after merge ([#81](https://github.com/edp5/edp5-actions/issues/81)) ([f6a18f6](https://github.com/edp5/edp5-actions/commit/f6a18f6cf45e73e4c21413165b75b11f101ed413))
+
 ## [1.1.5](https://github.com/edp5/edp5-actions/compare/v1.1.4...v1.1.5) (2026-03-19)
 
 ### 🐛 Bug Fixes
