@@ -20,7 +20,7 @@ runs:
         GITHUB_TOKEN: ${{ inputs.token }}
 
     - name: Enable auto merge or merge pull request
-      run: gh pr merge ${{ github.event.pull_request.number }} --auto -s -d
+      run: gh pr merge ${{ github.event.pull_request.number }} --auto -s
       shell: bash
       env:
         GITHUB_TOKEN: ${{ inputs.token }}
