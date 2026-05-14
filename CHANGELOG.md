@@ -1,3 +1,9 @@
+## [1.3.0](https://github.com/edp5/edp5-actions/compare/v1.2.1...v1.3.0) (2026-05-14)
+
+### 🚀 New features
+
+* Add label for pull request merge readiness ([#95](https://github.com/edp5/edp5-actions/issues/95)) ([7049fba](https://github.com/edp5/edp5-actions/commit/7049fbac8b40c01a35130ded54748b26138c89dc))
+
 ## [1.2.1](https://github.com/edp5/edp5-actions/compare/v1.2.0...v1.2.1) (2026-04-12)
 
 ### 🛠️ Technical
