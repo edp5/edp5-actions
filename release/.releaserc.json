@@ -15,10 +15,7 @@
           { "type": "docs", "release": "patch" },
           { "type": "tech", "release": "patch" },
           { "type": "chore", "release": false },
-          {
-            "type": "bump",
-            "release": "patch"
-          },
+          { "type": "bump", "release": "patch" },
           { "type": "style", "release": false },
           { "type": "test", "release": false }
         ]
