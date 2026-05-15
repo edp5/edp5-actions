@@ -58,7 +58,6 @@ runs:
       if: steps.check-nvmrc.outputs.UP_TO_DATE == 'false'
       shell: bash
       run: |
-        gh pr create --title "bump: Update Node.js version from ${{ steps.check-nvmrc.outputs.CURRENT_VERSION }} to ${{ steps.get-latest-node.outputs.LATEST_VERSION }}" --body "This PR updates the Node.js version in the .nvmrc file to the latest version ${{ steps.get-latest-node.outputs.LATEST_VERSION }}." --base main
-        gh pr edit --add-label "Ready to merge,dependencies"
+        gh pr create --title "bump: Update Node.js version from ${{ steps.check-nvmrc.outputs.CURRENT_VERSION }} to ${{ steps.get-latest-node.outputs.LATEST_VERSION }}" --body "This PR updates the Node.js version in the .nvmrc file to the latest version ${{ steps.get-latest-node.outputs.LATEST_VERSION }}." --base main --label "Ready to merge,dependencies,no-coverage"
       env:
         GITHUB_TOKEN: ${{ inputs.token }}
