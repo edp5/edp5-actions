@@ -15,6 +15,7 @@
           { "type": "docs", "release": "patch" },
           { "type": "tech", "release": "patch" },
           { "type": "chore", "release": false },
+          { "type": "bump", "release": "patch" },
           { "type": "style", "release": false },
           { "type": "test", "release": false }
         ]
@@ -33,6 +34,7 @@
             { "type": "refactor", "section": "🏗️ Code Refactoring" },
             { "type": "docs", "section": "📚 Documentation" },
             { "type": "tech", "section": "🛠️ Technical" },
+            { "type": "bump", "section": "🔖 Version Bumps" },
             { "type": "revert", "section": "⏪ Reverts" },
             { "type": "chore", "hidden": true },
             { "type": "style", "hidden": true },
