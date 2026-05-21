@@ -1,3 +1,17 @@
+## [1.4.0](https://github.com/edp5/edp5-actions/compare/v1.3.0...v1.4.0) (2026-05-21)
+
+### 🚀 New features
+
+* add bump type for versioning in release config ([#97](https://github.com/edp5/edp5-actions/issues/97)) ([3dc4c66](https://github.com/edp5/edp5-actions/commit/3dc4c662aebe06dd8275c2e94eec7a126f55c3c3))
+
+### 🐛 Bug Fixes
+
+* Update release configuration and plugin versions ([#98](https://github.com/edp5/edp5-actions/issues/98)) ([aad3aa7](https://github.com/edp5/edp5-actions/commit/aad3aa71ae7038b1dd2b14a0d6dd774c0a313066))
+
+### 🛠️ Technical
+
+* Create the no-coverage option ([#99](https://github.com/edp5/edp5-actions/issues/99)) ([193671b](https://github.com/edp5/edp5-actions/commit/193671b600ea806063207a4e76a52ab26f351ee0))
+
 ## [1.3.0](https://github.com/edp5/edp5-actions/compare/v1.2.1...v1.3.0) (2026-05-14)
 
 ### 🚀 New features
