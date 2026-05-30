@@ -1,0 +1,19 @@
+name: setup-docker-compose
+description: "Setup docker and up docker compose. You must add environment variables before use this action"
+inputs:
+  waitTime:
+    description: "Time to wait for docker compose to be up. Default is 2 seconds"
+    required: false
+    default: "2"
+runs:
+  using: "composite"
+  steps:
+    - name: Setup docker
+      uses: docker/setup-buildx-action@v4
+
+    - name: up docker compose and wait for it
+      run: |
+        docker compose up -d
+        sleep ${{ inputs.waitTime }}
+        docker compose ps
+      shell: bash
