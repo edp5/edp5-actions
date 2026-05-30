@@ -1,3 +1,11 @@
+## 1.5.0 (2026-05-30)
+
+* fix: Fix the action template (#107) ([36d14a5](https://github.com/edp5/edp5-actions/commit/36d14a5)), closes [#107](https://github.com/edp5/edp5-actions/issues/107)
+* feat: Create action to setup Docker Compose (#106) ([35d9afd](https://github.com/edp5/edp5-actions/commit/35d9afd)), closes [#106](https://github.com/edp5/edp5-actions/issues/106)
+* tech: Remove not necessary tests (#105) ([9a74e51](https://github.com/edp5/edp5-actions/commit/9a74e51)), closes [#105](https://github.com/edp5/edp5-actions/issues/105)
+* bump(deps-dev): bump eslint from 10.4.0 to 10.4.1 (#104) ([28c0994](https://github.com/edp5/edp5-actions/commit/28c0994)), closes [#104](https://github.com/edp5/edp5-actions/issues/104)
+* bump(deps): bump edp5/edp5-actions from 1.3.0 to 1.4.0 (#103) ([8cd82b7](https://github.com/edp5/edp5-actions/commit/8cd82b7)), closes [#103](https://github.com/edp5/edp5-actions/issues/103)
+
 ## [1.4.0](https://github.com/edp5/edp5-actions/compare/v1.3.0...v1.4.0) (2026-05-21)
 
 ### 🚀 New features
