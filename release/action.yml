@@ -28,9 +28,8 @@ runs:
       env:
         GITHUB_TOKEN: ${{ inputs.token }}
       with:
-        semantic_version: 25
         extra_plugins: |
-          @semantic-release/changelog@6
-          @semantic-release/git@10
-          @semantic-release/exec@7
-          conventional-changelog-conventionalcommits@5
+          @semantic-release/changelog
+          @semantic-release/git
+          @semantic-release/exec
+          conventional-changelog-conventionalcommits
