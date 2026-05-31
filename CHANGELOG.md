@@ -1,3 +1,13 @@
+## [1.5.1](https://github.com/edp5/edp5-actions/compare/v1.5.0...v1.5.1) (2026-05-31)
+
+### 🐛 Bug Fixes
+
+* Remove version tags from extra plugins in action.yml ([#108](https://github.com/edp5/edp5-actions/issues/108)) ([ecb99bf](https://github.com/edp5/edp5-actions/commit/ecb99bfd6bf0368c6571e088d3e48bab4c29ed59))
+
+### 🔖 Version Bumps
+
+* Use the main branch to run internal actions ([#109](https://github.com/edp5/edp5-actions/issues/109)) ([0675609](https://github.com/edp5/edp5-actions/commit/06756097dfef6ab18d4f5925bd0f700fafd36b0f))
+
 ## 1.5.0 (2026-05-30)
 
 * fix: Fix the action template (#107) ([36d14a5](https://github.com/edp5/edp5-actions/commit/36d14a5)), closes [#107](https://github.com/edp5/edp5-actions/issues/107)
