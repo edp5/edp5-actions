@@ -53,7 +53,7 @@
     [
       "@semantic-release/exec",
       {
-        "prepareCmd": "find . -mindepth 2 -maxdepth 3 -name 'package.json' -not -path '*/node_modules/*' -execdir sh -c 'npm version \"$0\" --git-tag-version=false' \"${nextRelease.type}\" \\;"
+        "prepareCmd": "find . -mindepth 2 -maxdepth 3 -name 'package.json' -not -path '*/node_modules/*' -execdir sh -c 'npm version \"$0\" --git-tag-version=false' \"${nextRelease.version}\" \\;"
       }
     ],
     [
