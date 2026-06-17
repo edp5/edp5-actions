@@ -1,3 +1,16 @@
+## [1.5.2](https://github.com/edp5/edp5-actions/compare/v1.5.1...v1.5.2) (2026-06-17)
+
+### 🐛 Bug Fixes
+
+* Fix command to update packages ([#115](https://github.com/edp5/edp5-actions/issues/115)) ([f27ac96](https://github.com/edp5/edp5-actions/commit/f27ac96d9f9b43eaa89df963a221dd3977539db1))
+
+### 🔖 Version Bumps
+
+* **deps-dev:** bump eslint from 10.4.1 to 10.5.0 ([#113](https://github.com/edp5/edp5-actions/issues/113)) ([aaef1ae](https://github.com/edp5/edp5-actions/commit/aaef1ae35e1fbca458c8a08d5591057511c68bb8))
+* **deps-dev:** bump vitest from 4.1.7 to 4.1.8 ([#111](https://github.com/edp5/edp5-actions/issues/111)) ([a8cfc8a](https://github.com/edp5/edp5-actions/commit/a8cfc8a2cbfca306ea2f9dd106176cf5f3fbe87b))
+* **deps-dev:** bump vitest from 4.1.8 to 4.1.9 ([#114](https://github.com/edp5/edp5-actions/issues/114)) ([7f648a2](https://github.com/edp5/edp5-actions/commit/7f648a270dfb4e5d9f1fce7819756c870926f2c1))
+* Update Node.js version from 25.9.0 to 26.2.0 ([#110](https://github.com/edp5/edp5-actions/issues/110)) ([102b0b7](https://github.com/edp5/edp5-actions/commit/102b0b7fe064bcbc01fd2ecb258202d97f02d36f))
+
 ## [1.5.1](https://github.com/edp5/edp5-actions/compare/v1.5.0...v1.5.1) (2026-05-31)
 
 ### 🐛 Bug Fixes
