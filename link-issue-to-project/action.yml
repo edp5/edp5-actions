@@ -1,0 +1,19 @@
+name: link-issue-to-project
+description: "Link an issue to a specific project"
+
+inputs:
+  project_name:
+    description: "The name of the project to link the issue to"
+    required: true
+  token:
+    description: "GitHub token with permissions to link issues to projects"
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Link issue to project
+      run: gh issue edit ${{ github.event.issue.number }} --add-project "${{ inputs.project_name }}" --repo ${{ github.repository }}
+      shell: bash
+      env:
+        GITHUB_TOKEN: ${{ inputs.token }}

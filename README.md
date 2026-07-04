@@ -11,7 +11,7 @@ This repository contains composite GitHub Actions designed to streamline common 
 
 ## Available Actions
 
-### 1. Auto Merge (`auto-merge`)
+### Auto Merge (`auto-merge`)
 
 Automatically merge pull requests with the 'Ready to merge' or 'Auto merge' label if they are not drafts.
 
@@ -47,7 +47,7 @@ jobs:
 **Inputs:**
 - `token` (required): GitHub token with repo permissions
 
-### 2. PR Title Check (`pr-title-check`)
+### PR Title Check (`pr-title-check`)
 
 Validates that pull request titles follow the conventional commit format.
 
@@ -89,7 +89,7 @@ jobs:
       - uses: edp5/edp5-actions/pr-title-check@main
 ```
 
-### 3. Release (`release`)
+### Release (`release`)
 
 Generate a changelog and release a repository with semantic-release.
 
@@ -119,6 +119,27 @@ jobs:
 
 **Inputs:**
 - `token` (required): GitHub token with repo permissions
+
+### Link issue to project
+Automatically link a new created issue to a project board.
+
+```yaml
+name: link-issue
+
+on:
+   issues:
+      types: [opened]
+
+jobs:
+   link-issue:
+      runs-on: ubuntu-latest
+      steps:
+         - uses: edp5/edp5-actions/link-issue-to-project@main
+           with:
+              token: ${{ secrets.SERVICE_TOKEN }}
+              project_name: ${{ vars.PROJECT_NAME }}
+```
+
 
 ## Contributing
 

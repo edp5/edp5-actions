@@ -1,0 +1,14 @@
+name: link-issue
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+    link-issue:
+        runs-on: ubuntu-latest
+        steps:
+          - uses: edp5/edp5-actions/link-issue-to-project@main
+            with:
+              token: ${{ secrets.SERVICE_TOKEN }}
+              project_name: ${{ vars.PROJECT_NAME }}
