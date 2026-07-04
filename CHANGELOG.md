@@ -1,3 +1,5 @@
+## [1.6.0](https://github.com/edp5/edp5-actions/compare/v1.5.3...v1.6.0) (2026-07-04)
+
 ## [1.5.3](https://github.com/edp5/edp5-actions/compare/v1.5.2...v1.5.3) (2026-07-01)
 
 ## [1.5.2](https://github.com/edp5/edp5-actions/compare/v1.5.1...v1.5.2) (2026-06-17)
