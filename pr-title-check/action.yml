@@ -12,7 +12,7 @@ runs:
           exit 0
         fi
         title="${{ github.event.pull_request.title }}"
-        if ! echo "$title" | grep -Eq '^(fix|feat|tech|docs|bump|style|refactor|chore|perf|test|revert|breaking)(\([^)]+\))?:'; then
+        if ! echo "$title" | grep -Eq '^(fix|feat|tech|docs|bump|style|refactor|chore|perf|test|revert|breaking)(\([^)]+\))?[[:space:]]*:'; then
           echo "❌ Error:
           Pull request title must start with one of the following keywords:
           fix, feat, tech, docs, bump, style, refactor, chore, perf, test, breaking or revert.
