@@ -1,3 +1,8 @@
+## <small>1.6.1 (2026-07-07)</small>
+
+* revert: bump: Use the main branch to run internal actions (#128) ([15244ef](https://github.com/edp5/edp5-actions/commit/15244ef)), closes [#128](https://github.com/edp5/edp5-actions/issues/128)
+* bump(deps-dev): bump vitest from 4.1.9 to 4.1.10 (#127) ([f887563](https://github.com/edp5/edp5-actions/commit/f887563)), closes [#127](https://github.com/edp5/edp5-actions/issues/127)
+
 ## [1.6.0](https://github.com/edp5/edp5-actions/compare/v1.5.3...v1.6.0) (2026-07-04)
 
 ## [1.5.3](https://github.com/edp5/edp5-actions/compare/v1.5.2...v1.5.3) (2026-07-01)
