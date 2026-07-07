@@ -1,3 +1,7 @@
+## <small>1.6.2 (2026-07-07)</small>
+
+* fix: Fix PR check rule (#129) ([ac7b2bf](https://github.com/edp5/edp5-actions/commit/ac7b2bf)), closes [#129](https://github.com/edp5/edp5-actions/issues/129)
+
 ## <small>1.6.1 (2026-07-07)</small>
 
 * revert: bump: Use the main branch to run internal actions (#128) ([15244ef](https://github.com/edp5/edp5-actions/commit/15244ef)), closes [#128](https://github.com/edp5/edp5-actions/issues/128)
