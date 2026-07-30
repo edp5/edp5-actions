@@ -1,3 +1,5 @@
+## [1.7.0](https://github.com/edp5/edp5-actions/compare/v1.6.2...v1.7.0) (2026-07-30)
+
 ## <small>1.6.2 (2026-07-07)</small>
 
 * fix: Fix PR check rule (#129) ([ac7b2bf](https://github.com/edp5/edp5-actions/commit/ac7b2bf)), closes [#129](https://github.com/edp5/edp5-actions/issues/129)
