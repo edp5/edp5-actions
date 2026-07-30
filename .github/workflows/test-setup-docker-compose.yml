@@ -1,0 +1,35 @@
+name: Test setup-docker-compose action
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Run setup-docker-compose action
+        uses: edp5/edp5-actions/setup-docker-compose@main
+        with:
+          waitTime: "5"
+          environmentVariables: "POSTGRES_USER=test POSTGRES_PASSWORD=test POSTGRES_DB=testdb"
+
+      - name: Check web service
+        run: curl --fail http://localhost:8080
+
+      - name: Check db service
+        run: |
+          docker compose exec -T db pg_isready -U test
+
+      - name: Check cache service
+        run: |
+          docker compose exec -T cache redis-cli ping
+
+      - name: Tear down
+        if: always()
+        run: docker compose down -v
