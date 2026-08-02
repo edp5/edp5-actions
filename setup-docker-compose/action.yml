@@ -9,6 +9,10 @@ inputs:
     description: "Environment variables to pass to docker compose. Format: VAR1=value1 VAR2=value2"
     required: false
     default: ""
+  path:
+    description: "Path to the docker compose file. Default is current directory"
+    required: false
+    default: "."
 runs:
   using: "composite"
   steps:
@@ -17,6 +21,7 @@ runs:
 
     - name: up docker compose and wait for it
       run: |
+        cd ${{ inputs.path }}
         for pair in ${{ inputs.environmentVariables }}; do
           export "$pair"
         done
