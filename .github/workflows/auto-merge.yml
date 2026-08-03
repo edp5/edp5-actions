@@ -16,6 +16,6 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-      - uses: edp5/edp5-actions/auto-merge@v1.6.2
+      - uses: edp5/edp5-actions/auto-merge@v1.7.0
         with:
           token: ${{ secrets.SERVICE_TOKEN }}
