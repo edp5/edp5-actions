@@ -32,4 +32,4 @@ runs:
           @semantic-release/changelog
           @semantic-release/git
           @semantic-release/exec
-          conventional-changelog-conventionalcommits
+          conventional-changelog-conventionalcommits@8
