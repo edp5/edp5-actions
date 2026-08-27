@@ -1,3 +1,21 @@
+## [1.8.1](https://github.com/edp5/edp5-actions/compare/v1.8.0...v1.8.1) (2026-08-27)
+
+### 🐛 Bug Fixes
+
+* Fix the release with version of conventional commits ([#150](https://github.com/edp5/edp5-actions/issues/150)) ([3550275](https://github.com/edp5/edp5-actions/commit/355027521a6db9b73520311ce0d977dc91fe26e2))
+* Use the main branch to run actions ([#151](https://github.com/edp5/edp5-actions/issues/151)) ([14e74b6](https://github.com/edp5/edp5-actions/commit/14e74b69d01b73b2cdb1dc880adf2d4a69038714))
+
+### 🔖 Version Bumps
+
+* **deps-dev:** bump eslint from 10.8.0 to 10.8.1 ([#145](https://github.com/edp5/edp5-actions/issues/145)) ([88be220](https://github.com/edp5/edp5-actions/commit/88be220ea57a40c8e007c9a3b02e24f596704e70))
+* **deps-dev:** bump eslint from 10.8.1 to 10.9.0 ([#149](https://github.com/edp5/edp5-actions/issues/149)) ([ec3e1dc](https://github.com/edp5/edp5-actions/commit/ec3e1dc8561aa34c692fe130540373cff121fe7c))
+* **deps-dev:** bump globals from 17.10.0 to 17.11.0 ([#147](https://github.com/edp5/edp5-actions/issues/147)) ([2d7a2a3](https://github.com/edp5/edp5-actions/commit/2d7a2a36191d0ac59c887963f2feeb3e2285fd30))
+* **deps-dev:** bump globals from 17.8.0 to 17.9.0 ([#144](https://github.com/edp5/edp5-actions/issues/144)) ([b33b954](https://github.com/edp5/edp5-actions/commit/b33b9542081b232e3b57c347b4f63f7bc0039a9a))
+* **deps-dev:** bump globals from 17.9.0 to 17.10.0 ([#146](https://github.com/edp5/edp5-actions/issues/146)) ([350efbb](https://github.com/edp5/edp5-actions/commit/350efbbf9f08ad2ef3840590f1898bb6a26e134f))
+* **deps-dev:** bump vitest from 4.1.10 to 4.1.11 ([#148](https://github.com/edp5/edp5-actions/issues/148)) ([334fb0f](https://github.com/edp5/edp5-actions/commit/334fb0f0a9b28fdb0d1ff605b0dc80192cfd5a74))
+* **deps:** bump edp5/edp5-actions from 1.6.2 to 1.7.0 ([#142](https://github.com/edp5/edp5-actions/issues/142)) ([a82f2c5](https://github.com/edp5/edp5-actions/commit/a82f2c511a02e13bf40d07989c6d8e39d493d04c))
+* **deps:** bump edp5/edp5-actions from 1.7.0 to 1.8.0 ([#143](https://github.com/edp5/edp5-actions/issues/143)) ([081af14](https://github.com/edp5/edp5-actions/commit/081af14a050f781953fb5cec7025851dc3609588))
+
 ## [1.8.0](https://github.com/edp5/edp5-actions/compare/v1.7.0...v1.8.0) (2026-08-02)
 
 ## [1.7.0](https://github.com/edp5/edp5-actions/compare/v1.6.2...v1.7.0) (2026-07-30)
