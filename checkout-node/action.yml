@@ -1,0 +1,38 @@
+name: checkout-node
+description: "Checkout and setup node on github actions"
+
+inputs:
+  installCommand:
+    description: "Command to run after checkout"
+    required: true
+    default: "npm install"
+  version:
+    description: "Node version to use (ignored if file-version is set)"
+    required: false
+    default: "lts/*"
+  file-version:
+    description: "File to read node version from (takes precedence over version if set)"
+    required: false
+    default: ""
+  workingDirectory:
+    description: "Working directory to run the command in"
+    required: false
+    default: "."
+
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout code
+      uses: actions/checkout@v7
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v7
+      with:
+        node-version: ${{ inputs.file-version == '' && inputs.version || '' }}
+        node-version-file: ${{ inputs.file-version != '' && inputs.file-version || '' }}
+        cache: "npm"
+
+    - name: Run command
+      working-directory: ${{ inputs.workingDirectory }}
+      run: ${{ inputs.installCommand }}
+      shell: bash
