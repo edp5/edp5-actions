@@ -1,3 +1,13 @@
+## [1.9.0](https://github.com/edp5/edp5-actions/compare/v1.8.1...v1.9.0) (2026-08-31)
+
+### 🚀 New features
+
+* Create an action to checkout and setup node quickly ([#153](https://github.com/edp5/edp5-actions/issues/153)) ([856b88f](https://github.com/edp5/edp5-actions/commit/856b88f54f0c773ff35a5c1f3f2e7b3e92bbe005))
+
+### 🔖 Version Bumps
+
+* **deps-dev:** bump eslint from 10.9.0 to 10.9.1 ([#152](https://github.com/edp5/edp5-actions/issues/152)) ([0f8c03d](https://github.com/edp5/edp5-actions/commit/0f8c03db52ff13706440311ee1920d9810d8fafd))
+
 ## [1.8.1](https://github.com/edp5/edp5-actions/compare/v1.8.0...v1.8.1) (2026-08-27)
 
 ### 🐛 Bug Fixes
