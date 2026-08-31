@@ -124,7 +124,7 @@ jobs:
 Automatically link a new created issue to a project board.
 
 ```yaml
-name: link-issue
+^name: link-issue
 
 on:
    issues:
@@ -140,6 +140,29 @@ jobs:
               project_name: ${{ vars.PROJECT_NAME }}
 ```
 
+### Checkout node: checkout-node
+This action checkout code, setup node and install dependencies with your command. This action use only npm.
+
+```yaml
+name: checkout-node
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  checkout-node:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: edp5/edp5-actions/checkout-node@main
+        with:
+           file-version: .nvmrc
+           install-command: npm install
+           version:  18
+```
+
+#### NOTE
+Params version and file-version mustn't be used together. If both are provided, the action will use the version param.
 
 ## Contributing
 
