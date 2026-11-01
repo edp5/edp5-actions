@@ -14,12 +14,18 @@ runs:
       with:
         token: ${{ inputs.token }}
 
+    - name: Setup latest Node.js
+      id: setup-node
+      uses: actions/setup-node@v6
+      with:
+        node-version: "lts/*"
+
     - name: Get latest Node.js version
       id: get-latest-node
       shell: bash
       run: |
-        LATEST_VERSION=$(curl -s https://nodejs.org/dist/index.json | jq -r '.[0].version' | sed 's/v//')
-        echo "LATEST_VERSION=$LATEST_VERSION" >> $GITHUB_OUTPUT
+        LATEST_VERSION="${{ steps.setup-node.outputs.node-version }}"
+        echo "LATEST_VERSION=${LATEST_VERSION#v}" >> $GITHUB_OUTPUT
 
     - name: Check if .nvmrc file is up to date
       id: check-nvmrc
@@ -41,6 +47,7 @@ runs:
             echo "UP_TO_DATE=false" >> $GITHUB_OUTPUT
           fi
         fi
+
 
     - name: Check whether the release branch already exists
       id: check-branch
