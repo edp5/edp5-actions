@@ -1,3 +1,34 @@
+## [1.10.0](https://github.com/edp5/edp5-actions/compare/v1.9.0...v1.10.0) (2026-11-01)
+
+### 🚀 New features
+
+* Use the lts node version ([#173](https://github.com/edp5/edp5-actions/issues/173)) ([77e6555](https://github.com/edp5/edp5-actions/commit/77e655504f19bf5d42d4c119f9a730fcce49ec91))
+
+### 🛠️ Technical
+
+* Use the new action and update documentation ([#154](https://github.com/edp5/edp5-actions/issues/154)) ([eea2c9e](https://github.com/edp5/edp5-actions/commit/eea2c9e7b9d610cbec44c482f294e1b7dc4faa23))
+
+### 🔖 Version Bumps
+
+* **deps-dev:** bump eslint from 10.10.0 to 10.11.0 ([#161](https://github.com/edp5/edp5-actions/issues/161)) ([b24f421](https://github.com/edp5/edp5-actions/commit/b24f421c2824fcebfbddbafc4b5d28a7df9261e4))
+* **deps-dev:** bump eslint from 10.11.0 to 10.12.0 ([#166](https://github.com/edp5/edp5-actions/issues/166)) ([9cdd9f7](https://github.com/edp5/edp5-actions/commit/9cdd9f737b4725cc81f47d2c235a4cbaa2296af7))
+* **deps-dev:** bump eslint from 10.12.0 to 10.13.0 ([#170](https://github.com/edp5/edp5-actions/issues/170)) ([dd51c26](https://github.com/edp5/edp5-actions/commit/dd51c265d82c7ee64cc8d6ee798f2c5176f33e54))
+* **deps-dev:** bump eslint from 10.9.1 to 10.10.0 ([#157](https://github.com/edp5/edp5-actions/issues/157)) ([717a213](https://github.com/edp5/edp5-actions/commit/717a213275c6077edcf3934368fd358ed6fd73f6))
+* **deps-dev:** bump globals from 17.11.0 to 17.12.0 ([#156](https://github.com/edp5/edp5-actions/issues/156)) ([53943f2](https://github.com/edp5/edp5-actions/commit/53943f292ea77df8e0b440a1248cdcce90cd2c1e))
+* **deps-dev:** bump globals from 17.12.0 to 17.13.0 ([#167](https://github.com/edp5/edp5-actions/issues/167)) ([a7ce5f9](https://github.com/edp5/edp5-actions/commit/a7ce5f94b1a4811e603e8d21820412690527b663))
+* **deps-dev:** bump vitest from 4.1.11 to 5.0.0 ([#158](https://github.com/edp5/edp5-actions/issues/158)) ([dfd39c6](https://github.com/edp5/edp5-actions/commit/dfd39c69b59ab9e296802f6ee2488ea399482bf5))
+* **deps-dev:** bump vitest from 5.0.0 to 5.0.1 ([#160](https://github.com/edp5/edp5-actions/issues/160)) ([353c8ad](https://github.com/edp5/edp5-actions/commit/353c8adc805786cbaa16eea782dd537ead17fd30))
+* **deps-dev:** bump vitest from 5.0.1 to 5.0.2 ([#163](https://github.com/edp5/edp5-actions/issues/163)) ([2a0caaa](https://github.com/edp5/edp5-actions/commit/2a0caaa77078f8f7c85f3e3d7548fde086b32d7c))
+* **deps-dev:** bump vitest from 5.0.2 to 5.0.3 ([#165](https://github.com/edp5/edp5-actions/issues/165)) ([d3e2625](https://github.com/edp5/edp5-actions/commit/d3e2625d447caa213a0370fc76a735692099ed25))
+* **deps-dev:** bump vitest from 5.0.3 to 5.0.4 ([#168](https://github.com/edp5/edp5-actions/issues/168)) ([4f7bf6c](https://github.com/edp5/edp5-actions/commit/4f7bf6cca060709f1f621e93af2779d6c9c4a4a7))
+* **deps-dev:** bump vitest from 5.0.4 to 5.0.5 ([#169](https://github.com/edp5/edp5-actions/issues/169)) ([7ae3723](https://github.com/edp5/edp5-actions/commit/7ae372377be9de433fc2860fa56466654010428a))
+* **deps-dev:** bump yaml from 2.9.0 to 2.9.1 ([#159](https://github.com/edp5/edp5-actions/issues/159)) ([f0669cd](https://github.com/edp5/edp5-actions/commit/f0669cdee4873b20b708cbc24e0fd02fb635358e))
+* **deps-dev:** bump yargs from 18.1.0 to 18.2.0 ([#162](https://github.com/edp5/edp5-actions/issues/162)) ([f2c3897](https://github.com/edp5/edp5-actions/commit/f2c3897094205fd6c9ba771f6057a750ab739355))
+* **deps:** bump cycjimmy/semantic-release-action from 6 to 8 in /release ([#171](https://github.com/edp5/edp5-actions/issues/171)) ([4c07729](https://github.com/edp5/edp5-actions/commit/4c07729a639689beb1bcef552b498dfe526056b0))
+* Update Node.js version from 26.10.0 to 27.0.0-alpha.0.0.0 ([#172](https://github.com/edp5/edp5-actions/issues/172)) ([83e8836](https://github.com/edp5/edp5-actions/commit/83e8836cd34e2bccac1f9bd8a786053610eca1e4))
+* Update Node.js version from 26.5.1 to 26.8.1 ([#155](https://github.com/edp5/edp5-actions/issues/155)) ([ba61fcd](https://github.com/edp5/edp5-actions/commit/ba61fcdae1dfd4c814c7fe1078141a7d64f8956b))
+* Update Node.js version from 26.8.1 to 26.10.0 ([#164](https://github.com/edp5/edp5-actions/issues/164)) ([f586b38](https://github.com/edp5/edp5-actions/commit/f586b38dc12fcde4f0839472f705cf48c74beb38))
+
 ## [1.9.0](https://github.com/edp5/edp5-actions/compare/v1.8.1...v1.9.0) (2026-08-31)
 
 ### 🚀 New features
