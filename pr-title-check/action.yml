@@ -1,6 +1,16 @@
 name: "PR Title Check"
 description: "Check if the pull request title follows the conventional commit format."
 
+inputs:
+  token:
+    description: "GitHub token for authentication."
+    required: true
+    default: "${{ github.token }}"
+  comment:
+    description: "Whether to comment on the PR if the title format is incorrect."
+    required: false
+    default: "true"
+
 runs:
   using: "composite"
   steps:
@@ -13,9 +23,15 @@ runs:
         fi
         title="${{ github.event.pull_request.title }}"
         if ! echo "$title" | grep -Eq '^(fix|feat|tech|docs|bump|style|refactor|chore|perf|test|revert|breaking)(\([^)]+\))?[[:space:]]*:'; then
-          echo "❌ Error:
+        message="❌ Error:
           Pull request title must start with one of the following keywords:
           fix, feat, tech, docs, bump, style, refactor, chore, perf, test, breaking or revert.
           Optionally, it can include a scope in parentheses followed by a colon (e.g., 'feat(scope):')."
+          echo "$message"
+          if [ "${{ inputs.comment }}" = "true" ]; then
+            gh pr comment "${{ github.event.pull_request.html_url }}" --body "$message"
+            fi
           exit 1
         fi
+      env:
+        GH_TOKEN: ${{ inputs.token }}
